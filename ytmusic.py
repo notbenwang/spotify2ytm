@@ -39,8 +39,9 @@ def get_playlist_id_from_url(url):
 
 def main():
     ytmusic = YTMusic("oauth.json")
-
-    url = "https://open.spotify.com/playlist/1iPLDmDwRJXUU3JMZ3OLBS?si=6eb55ba1a29f4dbb"
+    
+    # insert link to spotify playlist here
+    url = ""
 
     name, description, titles = spotify_playlist.get_playlist_titles_from_playlist(url)
     if not description:
