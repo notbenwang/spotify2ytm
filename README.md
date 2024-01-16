@@ -1,4 +1,4 @@
-# spotify2ytm
+# spotify2ytm - Python Application to convert Spotify Playlists to Youtube Music Playlists
 
 ## Motivation
 As an avid Youtube Music user (don't roast me), I wanted an easy, or rather a more convenient way to transfer a Spotify playlist into a Youtube Music playlist. 
@@ -25,5 +25,10 @@ For myself, I put the keys in a .env file, but you can also just hard code it in
 Then, download the necessary dependencies (YTMusic, python-dotenv, etc.)
 
 Then, in the ytmusic.py file, simply put the url for the spotify playlist in the variable 'url', and then the program will run and eventually print out a link to the Youtube Music playlist.
+
+## Future
+
+In the future, I would like to expand on this project to see if I could develop the program in reverse (convert YoutubeMusic playlist to Spotify Playlist), and use some web framework to make it easier for users to use the application without doing all the complicated setup. 
+I would also like to develop this application in the contexts of an actual Youtube Music API, rather than an unofficial one which might have security liabilities. 
 
 
