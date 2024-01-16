@@ -4,6 +4,14 @@
 As an avid Youtube Music user (don't roast me), I wanted an easy, or rather a more convenient way to transfer a Spotify playlist into a Youtube Music playlist. 
 While there exists programs that are capable of this, I wanted to see if I could program an application as an exercise to allow me to a) work with the Spotify and Youtube API's, and b) gain a familiarity with using API's in conjunction with Python.   
 
+
+## References and Caution
+While the Spotify API was used for this project, there is technically no official "Youtube Music" API, and with the regular Youtube API being severely limited in terms of the amount of possible searches that can be conducted in any given time frame,
+I did end up using this unofficial Youtube API which you can find here: https://ytmusicapi.readthedocs.io/en/stable/
+
+Because this isn't the official Youtube Music API and not supported/endorsed by Google, I can't for certain say that there is strong security in this program, which is why I would be hesitant to recommend using this specific program or application in conjunction
+with your Youtube account. With that being said, I have not suffered any issues regarding this, but there is still a reason for concern, so use at your own risk.
+
 ## How to Use
 You'll first need to get an oauth.json file for your Youtube account into the directory (specifically the Youtube TV one, https://developers.google.com/youtube/v3/guides/auth/devices). Originally, I was planning on making a web application to avoid this, but after considering the security risks for the unofficial Youtube API used, thought that it would be better to just
 have it as a Python application that only the most lazy would use (me). If you need help getting the oauth.json file, here's a tutorial: https://developers.google.com/identity/protocols/oauth2 
@@ -18,10 +26,4 @@ Then, download the necessary dependencies (YTMusic, python-dotenv, etc.)
 
 Then, in the ytmusic.py file, simply put the url for the spotify playlist in the variable 'url', and then the program will run and eventually print out a link to the Youtube Music playlist.
 
-## References and Caution
-While the Spotify API was used for this project, there is technically no official "Youtube Music" API, and with the regular Youtube API being severely limited in terms of the amount of possible searches that can be conducted in any given time frame,
-I did end up using this unofficial Youtube API which you can find here: https://ytmusicapi.readthedocs.io/en/stable/
-
-Because this isn't the official Youtube Music API and not supported/endorsed by Google, I can't for certain say that there is strong security in this program, which is why I would be hesitant to recommend using this specific program or application in conjunction
-with your Youtube account. With that being said, I have not suffered any issues regarding this, but there is still a reason for concern, so use at your own risk.
 
